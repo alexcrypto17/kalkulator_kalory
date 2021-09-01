@@ -1,2 +1,8 @@
-def formula_name():
-    print("eto  modul formuly")
+def calculate(ves, vozrast, rost, pol):
+    #Для женщин: (10 × вес в килограммах) + (6,25 × рост в сантиметрах) − (5 × возраст в годах) − 161
+    #Для мужчин: (10 × вес в килограммах) + (6,25 × рост в сантиметрах) − (5 × возраст в годах) + 5
+ 
+    if pol == 1:
+        return (10 * ves) + (6.25 * rost) - (5 * vozrast) - 161
+    else:
+        return (10 * ves) + (6.25 * rost) - (5 * vozrast) + 5
