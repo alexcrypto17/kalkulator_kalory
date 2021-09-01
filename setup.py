@@ -1,7 +1,7 @@
 import os
 from setuptools import setup, find_packages
 
-from myapp import __version__
+from app import __version__
 
 
 def read(fname):
@@ -10,14 +10,14 @@ def read(fname):
 requirements = []
 
 setup(
-    name = "My App",
+    name = "калькулятор калорий",
     version = ".".join(map(str, __version__)),
     description = "",
     long_description = read('README.rst'),
     url = '',
     license = 'MIT',
-    author = 'Full Name',
-    author_email = 'email@email.org',
+    author = 'Alex Chan',
+    author_email = 'chanalexnhl170707@gmail.com',
     packages = find_packages(exclude=['tests']),
     include_package_data = True,
     classifiers = [
